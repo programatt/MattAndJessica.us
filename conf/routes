@@ -4,6 +4,15 @@
 
 # Home page
 GET     /                           controllers.Application.index()
+GET     /about                      controllers.Application.about()
+GET     /proposal					controllers.Application.proposal()
+GET		/ceremony					controllers.Application.ceremony()
+GET     /wedding-party				controllers.Application.wedding_party()
+GET     /registries					controllers.Application.registries()
+GET     /guest-info					controllers.Application.guest_info()
+GET     /photo-album				controllers.Application.photo_album()
+GET     /guest-book					controllers.Application.guest_book()
+GET     /honeymoon					controllers.Application.honeymoon()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
