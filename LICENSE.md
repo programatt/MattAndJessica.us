@@ -1,1 +1,0 @@
-This is a private repository. I (Mathew Phillips) reserve all copyright and rights afforded to me by United States law. 
