@@ -10,7 +10,7 @@ head
     link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
     style .navbar{margin-bottom:30px;}
  body
-    .navbar
+    .navbar.navbar-inverse
       .navbar-inner
         .container
           button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
@@ -44,8 +44,27 @@ head
               li
                 a(href='/contact') Contact Us
     .container
+        h4 
+          b Matt 
+          | and 
+          b Jessica
+          span#themessage
         block content
+         
+        
     script(type='text/javascript', src='http://code.jquery.com/jquery-1.9.1.min.js')
     script(type='text/javascript', src='http://code.jquery.com/jquery-migrate-1.1.1.min.js')
     script(type='text/javascript', src='/js/bootstrap.min.js')
+    script 
+        $(function(){ 
+          var elem = $("#themessage"); 
+          var then = new Date("09/21/2013 00:00:00"); 
+          var now = new Date();
+          var span = Math.ceil(Math.abs(now-then) / 86400000);
+          if(now < then){
+              elem.text(" will be married in "+span+" days!");
+          }else{
+              elem.text(" have been married for "+span+" days!");
+          }
+        });
 

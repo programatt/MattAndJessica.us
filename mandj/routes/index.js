@@ -12,3 +12,7 @@ exports.index = function(req, res){
 exports.about = function(req, res){
     res.render('about', {title: 'About Us'});
 };
+
+exports.proposal = function(req, res){
+    res.render('proposal', {title: 'The Proposal'});
+};
