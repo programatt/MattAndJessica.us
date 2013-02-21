@@ -8,6 +8,7 @@ head
     meta(name='author', content='')
     link(rel='stylesheet', href='/css/bootstrap.min.css')
     link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
+    style .container{padding-top:30px;}
  body
     .navbar.navbar-fixed-top
       .navbar-inner
@@ -16,21 +17,34 @@ head
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.brand(href='#') MattAndJessica.us 
+          a.brand(href='/') MattAndJessica.us 
           .nav-collapse.collapse
             ul.nav
               li.dropdown
                 a(href='#',data-toggle='dropdown').dropdown-toggle The Wedding 
                 ul.dropdown-menu
                   li
-                    a(href='/about') About Us 	
+                    a(href='/about') About Us   
                   li
                     a(href='/proposal') The Proposal
+                  li
+                    a(href='/ceremony') Ceremony
+                  li
+                    a(href='/reception') Reception
+                  li
+                    a(href='/weddingparty') Wedding Party
+                  li
+                    a(href='/registries') Gift Registries
+                  li
+                    a(href='/photos') Photos
+                  li
+                    a(href='/honeymoon') Honeymoon
               li
                 a(href='/blog') Blog 
               li
                 a(href='/contact') Contact Us
-    .container=body
+    .container
+        block content
     script(type='text/javascript', src='http://code.jquery.com/jquery-1.9.1.min.js')
     script(type='text/javascript', src='http://code.jquery.com/jquery-migrate-1.1.1.min.js')
     script(type='text/javascript', src='/js/bootstrap.min.js')
