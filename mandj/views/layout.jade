@@ -1,0 +1,31 @@
+doctype 5
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/css/bootstrap-responsive.min.js')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+
+  body
+    div.navbar.navbar-fixed-top
+      div.navbar-inner
+        div.container
+          a(data-toggle='collapse', data-target='.nav-collapse').btn.btn-navbar
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(href='#').brand #{brand}
+          ul.nav
+            - var obj = { 'home':'Home', 'about':'About' }
+              - each val, key in obj
+                - if (id == key)
+                  li.active
+                    a(href='#{key}') #{val}
+                - else            
+                  li
+                    a(href='#{key}') #{val}
+
+    div.container!= body
+    
+    script(type='text/javascript', src='/js/jquery.min.js')
+    script(type='text/javascript', src='/js/bootstrap.min.js')
