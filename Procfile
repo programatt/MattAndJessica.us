@@ -1,1 +1,1 @@
-web: node mandj\app.js
+web: node mandj/app.js
