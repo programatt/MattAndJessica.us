@@ -8,7 +8,7 @@ head
     meta(name='author', content='')
     link(rel='stylesheet', href='/css/bootstrap.min.css')
     link(rel='stylesheet', href='/css/bootstrap-responsive.min.css')
-    style .navbar{margin-bottom:30px;}
+    style .navbar{margin-bottom:10px;}
  body
     .navbar.navbar-inverse
       .navbar-inner
@@ -67,4 +67,14 @@ head
               elem.text(" have been married for "+span+" days!");
           }
         });
+    script
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38648463-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {              
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
+                              
