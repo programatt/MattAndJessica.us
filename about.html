@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Express</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="The Personal Web Site of Matt and Jessica">
+		<meta name="author" content="Matt Phillips">
+		<meta name="google-site-verification" content="1ntOqKNPwOGRJAcdtW5Y7GtYnjuiRlMq0wVoue3riT4">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+		<style>.navbar{margin-bottom:10px;}</style>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="/" class="brand">MattAndJessica.us </a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li class="dropdown">
+								<a href="#" data-toggle="dropdown" class="dropdown-toggle">The Wedding </a>
+								<ul class="dropdown-menu">
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="/proposal">The Proposal</a></li>
+									<li><a href="/ceremony">Ceremony</a></li>
+									<li><a href="/reception">Reception</a></li>
+									<li><a href="/weddingparty">Wedding Party</a></li>
+									<li><a href="/registries">Gift Registries</a></li>
+									<li><a href="/photos">Photos</a></li>
+									<li><a href="/honeymoon">Honeymoon</a></li>
+								</ul></li>
+								<li><a href="/blog">Blog </a></li>
+								<li><a href="/contact">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h4> <b>Matt </b>and <b>Jessica</b><span id="themessage"></span></h4>
+			<h2>About Us</h2>
+			<p> </p>Matt and Jessica met during the summer of 2010.
+			Jessica was enjoying the last half of summer after her first year of college at Loras in Dubuque,IA. Matt was living 3 hours away in Des Moines, doing an internship in software development. One weekend, Matt decided to make a trip back home to spend some time with another friend. That night, he was invited to go to a bonfire at another friends house. Luck would have it that he was introduced to a person he had never met, but apparently knew who he was. Jessica! Something about her kept his interest, because he came back the next weekend and ended up hanging out in a group with her again. On the way back home he couldnt help but wonder what she though of him, and the bigger question. How could he get her number? <br><p></p>Fast forward 3 years. Matt graduated in 2011 from Wartburg, and started working in Des Moines for a major risk managment firm in software development. Jessica is almost finished with her Bachelors in Nursing after getting her biology bachelors degree in 3 years! They are currently planning their wedding, and making plans for their future! <br>
+			<img src="img/jessica_deck.jpg" alt="jessica on the deck"><br>
+			<img src="img/us.jpg" alt="us at joeys wedding">
+		</div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script>$(function(){ 
+			  var elem = $("#themessage"); 
+			  var then = new Date("09/21/2013 00:00:00"); 
+			  var now = new Date();
+			  var span = Math.ceil(Math.abs(now-then) / 86400000);
+			  if(now < then){
+				  elem.text(" will be married in "+span+" days!");
+			  }else{
+				  elem.text(" have been married for "+span+" days!");
+			  }
+			});</script><script>var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-38648463-1']);
+			_gaq.push(['_trackPageview']);
+			(function() {              
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		
+	</body>
+</html>
